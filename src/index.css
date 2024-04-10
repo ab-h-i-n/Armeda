@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.line::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 20px;
+    height: 2px;
+}
+
