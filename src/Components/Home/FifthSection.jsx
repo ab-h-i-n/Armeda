@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
+import OdometerCouter from "./OdometerCounter";
 
 const FifthSection = () => {
   const container = useRef();
@@ -46,6 +47,8 @@ const FifthSection = () => {
             </p>
           </div>
         </motion.div>
+
+        <OdometerCouter/>
       </motion.div>
     </section>
   );
