@@ -18,7 +18,7 @@ const HeroHeading = () => {
   );
 
   return (
-    <div className="text-white font-[500] leading-none relative">
+    <div className="text-white font-[500] leading-none relative mb-12 font-serif">
       {/* splash */}
       <motion.span
         initial={{ top: 0, opacity: 1 }}
@@ -47,7 +47,7 @@ const HeroHeading = () => {
         initial={{ top: -100, opacity: 0 }}
         animate={{ top: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 2 }}
-        className="absolute left-0 text-[2em]  lg:text-[5em] line before:bg-blue-600 before:h-2 before:w-20 before:-bottom-10"
+        className="absolute left-0 text-[2em]  lg:text-[5em]"
       >
         {MainHeading}
       </motion.span>

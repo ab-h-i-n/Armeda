@@ -2,8 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    font-family: Arial, Helvetica, sans-serif;
+
+@font-face {
+    font-family: 'HelveticaNow';
+    src: url('/fonts/helvetica-now-display-400.ttf');
+}
+
+@font-face {
+    font-family: 'HelveticaNow-md';
+    src: url('/fonts/helvetica-now-display-500.ttf');
 }
 
 

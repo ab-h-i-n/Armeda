@@ -5,7 +5,7 @@ import HamburgerIcon from "./HamburgerIcon";
 
 const ListItems = ({ item }) => {
   return (
-    <div className="px-5 py-4 transition-all hover:bg-black bg-transparent rounded-xl cursor-pointer mx-5 ">
+    <div className="flex items-center justify-center px-3 py-4 transition-all hover:bg-black bg-transparent rounded-xl cursor-pointer mx-5 ">
       <span className="relative line before:bg-current ">{item}</span>
     </div>
   );
@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <motion.nav
-      className="z-50 h-[84px] text-gray-300 text-sm fixed top-0 w-screen flex justify-between items-center p-2 px-5 lg:px-40"
+      className="z-[100] h-[84px] text-gray-300 text-sm fixed top-0 w-screen flex justify-between items-center p-2 px-5 lg:px-40"
       style={{ 
         backdropFilter: scrollY > window.innerHeight * 0.05 ? "blur(20px)" : "none",
         backgroundColor: scrollY > window.innerHeight * 0.05 ? "#343c41b0" : "transparent",
@@ -61,7 +61,7 @@ const Header = () => {
 
       {/* right column */}
       <div>
-        <Link className="hidden lg:block bg-blue-600 hover:bg-white hover:text-black transition-all font-medium px-5 py-4 rounded-md">
+        <Link className="hidden lg:block bg-blue-600 hover:bg-white hover:text-black transition-all font-medium px-5 py-4 rounded-md ">
           <span className="line relative before:bg-current transition-all">
             Schedule a demo
           </span>
