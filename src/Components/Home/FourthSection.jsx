@@ -8,7 +8,7 @@ const FourthSection = () => {
 
   const { scrollYProgress } = useScroll({
     target: container,
-    offset: ["start start", "end start"],
+    offset: ["start start", "center start"],
   });
 
   const md = useTransform(scrollYProgress, [0, 1], [400, -230]);

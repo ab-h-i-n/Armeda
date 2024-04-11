@@ -8,7 +8,7 @@ const FifthSection = () => {
 
   const { scrollYProgress } = useScroll({
     target: container,
-    offset: ["start start ", "end center"],
+    offset: ["start start ", "center start"],
   });
 
   const sm = useTransform(scrollYProgress, [0, 1], [500, -200]);
@@ -17,7 +17,7 @@ const FifthSection = () => {
   const isSmScreen = useMediaQuery({ maxWidth: 768 });
 
   return (
-    <section className="lg:h-screen lg:py-20">
+    <section className="lg:h-screen ">
       {/* counter continer */}
       <motion.div style={{ y: isSmScreen ? 0 : sm }} className="bg-gray-300 h-[80vh] lg:h-screen">
         {/* left container  */}
