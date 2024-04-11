@@ -7,7 +7,7 @@ import FourthSection from '../Components/Home/FourthSection'
 
 const HomePage = () => {
   return (
-    <div className='bg-black '>
+    <div className='bg-black min-h-[800vh]'>
         <HeroSection/>
         <SecondSection/>
         <ThirdSection/>

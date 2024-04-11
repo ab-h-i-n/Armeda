@@ -11,7 +11,7 @@ const FourthSection = () => {
     offset: ["start start", "center start"],
   });
 
-  const md = useTransform(scrollYProgress, [0, 1], [400, -230]);
+  const md = useTransform(scrollYProgress, [0, 1], [400, -130]);
   const sm = useTransform(scrollYProgress, [0, 1], [50, -120]);
 
   const isSmScreen = useMediaQuery({ maxWidth: 768 });
